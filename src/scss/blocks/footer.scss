@@ -1,0 +1,154 @@
+.footer {
+    background-color: #251928;
+    padding: 115px 0px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: #B1D26F;
+        filter: blur(225px);
+        width: 262px;
+        height: 165px;
+        top: -10%;
+        left: 63%;
+
+        @media (max-width:768px) {
+            left: 20%;
+        }
+    }
+}
+
+.footer__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 50px;
+
+    @media (max-width:1024px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-items: center;
+    }
+}
+
+.footer__first-block {
+    display: flex;
+    column-gap: 51px;
+    max-width: 636px;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+.footer-logo {
+    width: 194px;
+    height: 194px;
+
+    @media (max-width:1024px) {
+        margin: auto;
+    }
+}
+
+.footer__description {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 52px;
+
+    @media (max-width:1200px) {
+        max-width: 400px;
+    }
+
+    @media (max-width:768px) {
+        align-items: center;
+    }
+}
+
+.footer__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #96839B;
+
+    @media (max-width:768px) {
+        text-align: center;
+    }
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+
+}
+
+.socil {
+    fill: #D53D5C;
+
+    &:hover {
+        fill: #F7D7FF;
+    }
+}
+
+.footer__mail-sub {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #96839B;
+}
+
+.footer__mail {
+    color: inherit;
+    margin-left: 5px;
+}
+
+.footer__second-block {
+    display: flex;
+    max-width: 505px;
+    column-gap: 150px;
+
+
+    @media (max-width:378px) {
+        column-gap: 50px;
+    }
+
+    @media (max-width:320px) {
+        column-gap: 40px;
+    }
+}
+
+.about-auto {
+    flex-grow: 1;
+}
+
+.footer__about-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.45;
+}
+
+.footer__about-list {
+    li {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 50px;
+        color: #96839B;
+        transition: all 0.2s ease-in;
+    }
+
+    a {
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+    @media (max-width:375px) {
+        font-size: 18px;
+    }
+}

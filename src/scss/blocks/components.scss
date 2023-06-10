@@ -1,0 +1,132 @@
+.components {
+    padding: 250px 0px 192px;
+
+    @media (max-width:1144px) {
+        padding: 155px 0px 100px;
+    }
+
+    @media (max-width:768px) {
+        padding: 135px 0px 80px;
+    }
+
+    @media (max-width: 688px) {
+        padding: 0px 0px 80px;
+    }
+
+    @media (max-width: 425px) {
+        padding: 185px 0px 80px;
+    }
+
+    @media (max-width: 378px) {
+        padding: 240px 0px 80px;
+    }
+
+    @media (max-width: 320px) {
+        padding: 133px 0px 90px;
+    }
+}
+
+.components__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    gap: 132px;
+
+    @media (max-width:1240px) {
+        gap: 80px;
+    }
+
+    @media (max-width:990px) {
+        gap: 50px;
+    }
+
+    @media (max-width:768px) {
+        gap: 35px;
+    }
+
+    @media (max-width: 688px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 425px) {
+        gap: 20px;
+    }
+}
+
+.components__one {
+    @media (max-width:1240px) {
+        width: 109px;
+    }
+
+    @media (max-width:990px) {
+        width: 89px;
+    }
+
+    @media (max-width: 688px) {
+        margin-left: 50%;
+    }
+
+    @media (max-width: 425px) {
+        margin-left: 15%;
+    }
+}
+
+.components__two {
+    @media (max-width:1240px) {
+        width: 269px;
+    }
+
+    @media (max-width:990px) {
+        width: 219px;
+    }
+
+    @media (max-width:768px) {
+        width: 180px;
+    }
+
+    @media (max-width: 425px) {
+        width: 130px;
+    }
+}
+
+.components__tree {
+    @media (max-width:1240px) {
+        width: 164px;
+    }
+
+    @media (max-width:990px) {
+        width: 144px;
+    }
+
+    @media (max-width:768px) {
+        width: 125px;
+    }
+
+    @media (max-width: 688px) {
+        margin-left: 50%;
+    }
+
+    @media (max-width: 425px) {
+        width: 99px;
+        margin-left: 15%;
+    }
+}
+
+.components__four {
+    @media (max-width:1240px) {
+        width: 138px;
+    }
+
+    @media (max-width:990px) {
+        width: 118px;
+    }
+
+    @media (max-width:768px) {
+        width: 105px;
+    }
+
+    @media (max-width: 425px) {
+        width: 87px;
+    }
+}

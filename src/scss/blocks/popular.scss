@@ -1,0 +1,156 @@
+.popular {
+    padding-top: 171px;
+    padding-bottom: 104px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: #60E7CE;
+        filter: blur(225px);
+        width: 180px;
+        height: 168px;
+        top: 22%;
+        left: 31%;
+        z-index: -1;
+
+        @media (max-width:768px) {
+            left: 20%;
+        }
+    }
+
+    @media (max-width:1125px) {
+        padding-bottom: 60px;
+    }
+}
+
+
+.popular__desc-icons {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    img {
+        width: 54px;
+        height: 54px;
+
+        @media (max-width:830px) {
+            width: 45px;
+            height: 45px;
+        }
+
+        @media (max-width:630px) {
+            width: 39px;
+            height: 39px;
+        }
+
+        @media (max-width:560px) {
+            width: 41px;
+            height: 41px;
+        }
+    }
+}
+
+.popular__img {
+    img {
+        object-fit: cover;
+        max-height: 272px;
+    }
+}
+
+.popular__desc-email {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.1;
+
+    @media (max-width:1230px) {
+        font-size: 26px;
+    }
+
+    @media (max-width:1024px) {
+        font-size: 22px;
+    }
+
+    @media (max-width:830px) {
+        font-size: 18px;
+    }
+
+    @media (max-width:630px) {
+        font-size: 16px;
+    }
+
+    @media (max-width:560px) {
+        font-size: 20px;
+    }
+}
+
+.popular__desc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+
+    @media (max-width:1024px) {
+        margin-top: 15px;
+    }
+}
+
+.popular__desc-heard {
+    p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.7;
+        color: #C2B5C6;
+
+        @media (max-width:1230px) {
+            font-size: 18px;
+        }
+
+        @media (max-width:1024px) {
+            font-size: 16px;
+        }
+
+        @media (max-width:830px) {
+            font-size: 14px;
+        }
+
+        @media (max-width:560px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.popular__item {
+    max-width: 495px;
+    background-color: #3D2942;
+    padding: 32px;
+
+    &:hover {
+        opacity: .7;
+    }
+
+    @media (max-width:1230px) {
+        padding: 28px;
+    }
+
+    @media (max-width:1024px) {
+        padding: 22px;
+    }
+}
+
+.swiper-button-prev2,
+.swiper-button-next2 {
+    top: 57%;
+}
+
+.popular__mobile-card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    margin-top: 52px;
+
+    @media (max-width:560px) {
+        display: flex;
+    }
+}
